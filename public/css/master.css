@@ -1,0 +1,48 @@
+.jumbotron {
+    text-align: center;
+    margin-bottom: 0px !important;
+}
+.shortify {
+    padding-top: 20px;
+    text-align: center;   
+}
+*:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+.shorten-link {
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0% 10% 0% 10%;
+    border-radius: 20px;
+    border: 2px solid #343a40;
+    background-color: #e9ecef;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.shortify-output {
+    min-height: 200px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+.shortify button  {
+    border-radius: 0px;
+}
+.shortify .input-group {
+    margin-top: 20px;
+}
+.shortify textarea {
+    padding: 0% 20% 0% 20%;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 20px;
+    border: 0px solid;
+    text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
