@@ -6,7 +6,7 @@ const axios = require('axios');
 function uploadObject(object) {
 
 
-    axios.post('http://192.168.0.10./server.php', {
+    axios.post('http://localhost/server.php', {
         uploadObject: object
       })
       .then(function (response) {
@@ -28,7 +28,7 @@ async function checkLink(link) {
     if (url.length > 0) {
         submitBTN.disabled = true
         urlInput.disabled = true
-        axios.get(`http://192.168.0.10/server.php?checkLink=${link}`)
+        axios.get(`http://localhost/server.php?checkLink=${link}`)
     .then((response) => {
         urlInput.style.border = ""
         const response1 = response
@@ -48,7 +48,7 @@ async function checkLink(link) {
             submitBTN.disabled = false
             urlInput.disabled = false
             let shortiftyData = new Shortify("new link", link, response.status)
-            axios.get(`http://81.105.81.69/server.php?shortenLink=${link}`)
+            axios.get(`http://localhost/server.php?shortenLink=${link}`)
             .then((response) => {
                 shortiftyData.smallUrl = response.data
                 var finalResponse = "--------YOUR REQUEST-------- &#13" + JSON.stringify(response1, null, 2) + "&#13 --------YOUR LINK-------- &#13" + JSON.stringify(shortiftyData, null, 2); // spacing level = 2

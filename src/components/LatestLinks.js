@@ -4,7 +4,7 @@ import { render } from "react-dom";
 const axios = require('axios');
 
 async function getLinks() {
-    let response = await axios.post('http://192.168.0.10/server.php', {
+    let response = await axios.post('http://localhost/server.php', {
         getLinks: 'True'
       })
       .then(function (response) {
